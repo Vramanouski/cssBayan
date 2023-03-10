@@ -1,0 +1,162 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+header {
+    display: flex;
+    margin-left: 20%;
+}
+
+.acc-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    justify-items: center;
+    margin: auto;
+}
+
+*{
+    list-style: none;
+  }
+
+.acc-icon {
+    width: 3%;
+    height: 3%;
+    display: none;
+}
+
+.acc-img{
+    max-width: 15vw;
+    margin: auto;
+}
+
+  .accordion_item {
+    border-top: 3px solid #78797cb3;
+  }
+
+  .accordion_trigger {
+    display: flex;
+    background-color: antiquewhite;
+    color: rgb(20, 50, 219);
+    font-size: 2.5vw;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 0.5em;
+    justify-content: space-between;
+  }
+
+  .accordion_toggle {
+    position: absolute;
+    display: none;
+  }
+
+  .accordion_target {
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .accordion_toggle:checked ~ .accordion_target {
+    position: static;
+    overflow: visible;
+    clip: auto;
+    margin: auto;
+    padding: 0.2rem;
+    width: auto;
+    height: auto;
+
+    -webkit-animation:fadeIn ease-in 1.5s;
+    -moz-animation:fadeIn ease-in 1.5s;
+    animation:fadeIn ease-in 1.5s;
+  }
+
+  .accordion_toggle:checked ~ .accordion_trigger {
+    color: rgb(0, 0, 0);
+    -webkit-animation:fadeIn ease-in 0.5s;
+    -moz-animation:fadeIn ease-in 0.5s;
+    animation:fadeIn ease-in 0.5s;
+  }
+
+
+  .accordion_toggle:checked ~ .accordion_trigger img {
+    rotate: 45deg;
+  }
+  
+
+
+  @-moz-keyframes fadeIn {
+      from { opacity: 0; }
+  to { opacity: 1 }
+  }
+  @-webkit-keyframes fadeIn {
+      from { opacity: 0; }
+  to { opacity: 1 }
+  }
+  @keyframes fadeIn {
+      from { opacity: 0; }
+  to { opacity: 1 }
+  }
+
+
+
+
+@media screen and (min-width: 821px) {
+  
+    .acc-container:hover *{
+        color: rgba(0, 0, 0, 0.778);
+     }
+    
+     .acc-container:hover .acc-icon {
+        display: flex;
+        transition: 2s;
+     }
+    
+     .accordion_trigger:hover ~ .accordion_target {
+        position: static;
+        overflow: visible;
+        clip: auto;
+        margin: auto;
+        padding: 0.2rem;
+        width: auto;
+        height: auto;
+        -webkit-animation:fadeIn ease-in 1.5s; 
+        -moz-animation:fadeIn ease-in 1.5s;
+        animation:fadeIn ease-in 1.5s; 
+      }
+    
+    
+      .accordion_target:hover{
+        position: static;
+        overflow: visible;
+        clip: auto;
+        margin: auto;
+        padding: 0.2rem;
+        width: auto;
+        height: auto;
+        -webkit-animation:fadeIn ease-in 1.5s; 
+        -moz-animation:fadeIn ease-in 1.5s;
+        animation:fadeIn ease-in 1.5s; 
+      }
+    
+
+
+
+
+
+
+}
