@@ -151,10 +151,9 @@ header {
         animation:fadeIn ease-in 1.5s; 
       }
     
-
-
-
-
+ .accordion_trigger:hover .acc-icon{
+        rotate: 45deg;
+      }
 
 
 }
