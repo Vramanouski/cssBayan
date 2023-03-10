@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 header {
@@ -138,7 +137,6 @@ header {
         -moz-animation:fadeIn ease-in 1.5s;
         animation:fadeIn ease-in 1.5s; 
       }
-    
     
       .accordion_target:hover{
         position: static;
